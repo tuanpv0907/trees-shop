@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <title>Trees Shop Clone</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header
+      class="header items-center h-16 justify-between h-18 fixed top-0 flex w-full z-10"
+    >
+      <div class="navbar pl-1">
+        <ul class="flex uppercase">
+          <li
+            class="items-center text-[12px] font-bold mx-3 cursor-pointer hover:text-green-600 duration-200"
+          >
+            Home<i class="pl-1 fa-solid fa-angle-down"></i>
+          </li>
+          <li
+            class="items-center text-[12px] font-bold mx-3 cursor-pointer hover:text-green-600 duration-200"
+          >
+            Shop<i class="pl-1 fa-solid fa-angle-down"></i>
+          </li>
+          <li
+            class="items-center text-[12px] font-bold mx-3 cursor-pointer hover:text-green-600 duration-200"
+          >
+            Blog<i class="pl-1 fa-solid fa-angle-down"></i>
+          </li>
+          <li
+            class="items-center text-[12px] font-bold mx-3 cursor-pointer hover:text-green-600 duration-200"
+          >
+            Pages<i class="pl-1 fa-solid fa-angle-down"></i>
+          </li>
+          <li
+            class="items-center text-[12px] font-bold mx-3 cursor-pointer hover:text-green-600 duration-200"
+          >
+            Contact Us
+          </li>
+        </ul>
+      </div>
+      <div class="header__logo">
+        <img class="w-[150px]" src="./assets/img/Logo/logo.jpg" alt="Logo" />
+      </div>
+      <div class="nav-right flex">
+        <div class="nav-right-search mx-3">
+          <input
+            class="outline-none border-none bg-transparent pr-2 text-gray-700"
+            type="text"
+            placeholder="Search product..."
+          />
+          <i
+            class="text-[22px] hover:text-green-600 cursor-pointer duration-200 fa-solid fa-magnifying-glass"
+          ></i>
+        </div>
+        <i
+          class="text-[22px] hover:text-green-600 cursor-pointer duration-200 mx-3 fa-solid fa-users"
+        ></i>
+        <i
+          class="text-[22px] hover:text-green-600 cursor-pointer duration-200 mx-3 fa-solid fa-heart"
+        ></i>
+        <i
+          class="cart-icon relative text-[22px] hover:text-green-600 cursor-pointer duration-200 mx-3 fa-solid fa-cart-shopping"
+        >
+          <span
+            class="cart-quantity absolute text-[12px] -top-[12px] w-[20px] h-[20px] bg-green-600 flex items-center justify-center text-white rounded-full -right-[10px]"
+            >0</span
+          ></i
+        >
+      </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner relative w-full">
+      <div class="flex justify-between absolute top-[50%] w-full">
+        <div
+          class="banner-arrow__left pl-8 text-3xl hover:text-green-600 duration-300"
+        >
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+
+        <div
+          class="banner-arrow__right pr-8 text-3xl hover:text-green-600 duration-300"
+        >
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+
+      <div class="banner-content">
+        <span
+          class="block text-[16px] w-[118px] font-bold border-l-[2px] border-black pl-[8px]"
+        >
+          AMAZING FROM Lukani
+        </span>
+        <span class="mt-[28px] block text-[63px] font-semibold leading-none"
+          ><p class="font-extralight">CACTUS</p>
+          DECORATION</span
+        >
+        <p class="mt-[16px] text-[20px]">Discount 20% Off For Lukani Members</p>
+        <button
+          class="bg-black text-white text-[15px] mt-[38px] p-6 rounded-full font-semibold hover:bg-green-600 duration-200"
+        >
+          DISCOVER NOW
+        </button>
+      </div>
+    </section>
+
+    <!-- Feature -->
+    <section class="feature mt-[20px]">
+      <div class="feature-container py-[65px]">
+        <h3
+          class="feature-title text-[45px] relative text-center font-semibold"
+        >
+          Lukani Store
+        </h3>
+        <p class="px-[478px] text-[14px] mt-[50px] text-center">
+          Commodo sociosqu venenatis cras dolor sagittis integer luctus sem
+          primis eget maecenas sedurna malesuada consectetuer.
+        </p>
+      </div>
+      <div class="px-[125px] flex justify-between">
+        <div class="flex items-center justify-center">
+          <img src="./assets/img/Logo/shipping1.webp" alt="Feature 1" />
+          <div class="w-[65%] ml-[16px]">
+            <p class="text-[14px] font-medium leading-6 mb-[4px]">
+              Free Shipping
+            </p>
+            <p class="text-[14px] m-0 leading-4 font-normal">
+              Free shipping around the world for all orders over $120
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center">
+          <img src="./assets/img/Logo/shipping2.webp" alt="Feature 1" />
+          <div class="w-[65%] ml-[16px]">
+            <p class="text-[14px] font-medium leading-6 mb-[4px]">
+              Safe Payment
+            </p>
+            <p class="text-[14px] m-0 leading-4 font-normal">
+              With our payment gateway, don’t worry about your information
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center">
+          <img src="./assets/img/Logo/shipping3.webp" alt="Feature 1" />
+          <div class="w-[65%] ml-[16px]">
+            <p class="text-[14px] font-medium leading-6 mb-[4px]">
+              Friendly Services
+            </p>
+            <p class="text-[14px] m-0 leading-4 font-normal">
+              You have 30-day return guarantee for every single order
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product -->
+    <section class="product mt-[95px]">
+      <h2 class="product-title text-[40px] font-semibold text-center relative">
+        Featured Products
+      </h2>
+      <div class="store grid grid-cols-5 gap-4 mt-[48px] px-8">
+        <div class="relative product-item cursor-pointer duration-300 pb-4">
+          <img src="./assets/img/products/product1.webp" alt="Product 1" />
+          <span
+            class="bg-red-600 text-white px-4 py-1 absolute top-[10px] left-[10px] text-[13px]"
+            >-7%</span
+          >
+          <div
+            class="product-feature bg-white w-[74%] h-[40px] absolute flex justify-around items-center hidden duration-300"
+          >
+            <i
+              class="btn-addToCart hover:text-green-600 cursor-pointer fa-solid fa-cart-shopping"
+            ></i>
+            <i
+              class="hover:text-green-600 cursor-pointer fa-solid fa-sliders"
+            ></i>
+            <i
+              class="hover:text-green-600 cursor-pointer fa-solid fa-heart"
+            ></i>
+            <i class="hover:text-green-600 cursor-pointer fa-solid fa-eye"></i>
+          </div>
+          <div class="pt-[12px]">
+            <div class="text-center hover:text-green-600 cursor-pointer">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <p class="text-center text-[14px] my-[10px]">Commodo Augue Nisi</p>
+            <div class="text-center">
+              <span
+                class="product-price text-[15px] font-semibold text-green-600"
+                >$<span>69.00</span></span
+              >
+              <span class="line-through text-[12px] ml-[8px]"
+                >$<span>74.00</span></span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="relative product-item cursor-pointer duration-300">
+          <img src="./assets/img/products/product2.webp" alt="Product 1" />
+          <span
+            class="bg-red-600 text-white px-4 py-1 absolute top-[10px] left-[10px] text-[13px]"
+            >-6%</span
+          >
+          <div
+            class="product-feature bg-white w-[74%] h-[40px] absolute flex justify-around items-center hidden duration-300"
+          >
+            <i
+              class="btn-addToCart hover:text-green-600 cursor-pointer fa-solid fa-cart-shopping"
+            ></i>
+            <i
+              class="hover:text-green-600 cursor-pointer fa-solid fa-sliders"
+            ></i>
+            <i
+              class="hover:text-green-600 cursor-pointer fa-solid fa-heart"
+            ></i>
+            <i class="hover:text-green-600 cursor-pointer fa-solid fa-eye"></i>
+          </div>
+          <div class="pt-[12px]">
+            <div class="text-center hover:text-green-600 cursor-pointer">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <p class="text-center text-[14px] mt-[10px]">Fringilla Augue</p>
+            <div class="text-center">
+              <span
+                class="product-price text-[15px] font-semibold text-green-600"
+                >$<span>68.00</span></span
+              >
+              <span class="line-through text-[12px] ml-[8px]"
+                >$<span>75.00</span></span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="relative product-item cursor-pointer duration-300">
+          <img src="./assets/img/products/product3.jpg" alt="Product 1" />
+          <span
+            class="bg-red-600 text-white px-4 py-1 absolute top-[10px] left-[10px] text-[13px]"
+            >-6%</span
+          >
+          <div
+            class="product-feature bg-white w-[74%] h-[40px] absolute flex justify-around items-center hidden duration-300"
+          >
+            <i
+              class="btn-addToCart hover:text-green-600 cursor-pointer fa-solid fa-cart-shopping"
+            ></i>
+            <i
+              class="hover:text-green-600 cursor-pointer fa-solid fa-sliders"
+            ></i>
+            <i
+              class="hover:text-green-600 cursor-pointer fa-solid fa-heart"
+            ></i>
+            <i class="hover:text-green-600 cursor-pointer fa-solid fa-eye"></i>
+          </div>
+          <div class="pt-[12px]">
+            <div class="text-center hover:text-green-600 cursor-pointer">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <p class="text-center text-[14px] my-[10px]">Fringilla Augue</p>
+            <div class="text-center">
+              <span
+                class="product-price text-[15px] font-semibold text-green-600"
+                >$<span>68.00</span></span
+              >
+              <span class="line-through text-[12px] ml-[8px]"
+                >$<span>75.00</span></span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="relative product-item cursor-pointer duration-300">
+          <img src="./assets/img/products/product4.webp" alt="Product 1" />
+          <span
+            class="bg-red-600 text-white px-4 py-1 absolute top-[10px] left-[10px] text-[13px]"
+            >-5%</span
+          >
+          <div
+            class="product-feature bg-white w-[74%] h-[40px] absolute flex justify-around items-center hidden duration-300"
+          >
+            <i
+              class="btn-addToCart hover:text-green-600 cursor-pointer fa-solid fa-cart-shopping"
+            ></i>
+            <i
+              class="hover:text-green-600 cursor-pointer fa-solid fa-sliders"
+            ></i>
+            <i
+              class="hover:text-green-600 cursor-pointer fa-solid fa-heart"
+            ></i>
+            <i class="hover:text-green-600 cursor-pointer fa-solid fa-eye"></i>
+          </div>
+          <div class="pt-[12px]">
+            <div class="text-center hover:text-green-600 cursor-pointer">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <p class="text-center text-[14px] my-[10px]">Massa Massa</p>
+            <div class="text-center">
+              <span
+                class="product-price text-[15px] font-semibold text-green-600"
+                >$<span>75.00</span></span
+              >
+              <span class="line-through text-[12px] ml-[8px]"
+                >$<span>80.00</span></span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="relative product-item cursor-pointer duration-300">
+          <img src="./assets/img/products/product5.webp" alt="Product 1" />
+          <span
+            class="bg-red-600 text-white px-4 py-1 absolute top-[10px] left-[10px] text-[13px]"
+            >-8%</span
+          >
+          <div
+            class="product-feature bg-white w-[74%] h-[40px] absolute flex justify-around items-center hidden duration-300"
+          >
+            <i
+              class="btn-addToCart hover:text-green-600 cursor-pointer fa-solid fa-cart-shopping"
+            ></i>
+            <i
+              class="hover:text-green-600 cursor-pointer fa-solid fa-sliders"
+            ></i>
+            <i
+              class="hover:text-green-600 cursor-pointer fa-solid fa-heart"
+            ></i>
+            <i class="hover:text-green-600 cursor-pointer fa-solid fa-eye"></i>
+          </div>
+          <div class="pt-[12px]">
+            <div class="text-center hover:text-green-600 cursor-pointer">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <p class="text-center text-[14px] my-[10px]">Placerat Vestibulum</p>
+            <div class="text-center">
+              <span
+                class="product-price text-[15px] font-semibold text-green-600"
+                >$<span>65.00</span></span
+              >
+              <span class="line-through text-[12px] ml-[8px]"
+                >$<span>70.00</span></span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="relative product-item cursor-pointer duration-300">
+          <img src="./assets/img/products/product6.webp" alt="Product 1" />
+          <span
+            class="bg-red-600 text-white px-4 py-1 absolute top-[10px] left-[10px] text-[13px]"
+            >-9%</span
+          >
+          <div
+            class="product-feature bg-white w-[74%] h-[40px] absolute flex justify-around items-center hidden duration-300"
+          >
+            <i
+              class="btn-addToCart hover:text-green-600 cursor-pointer fa-solid fa-cart-shopping"
+            ></i>
+            <i
+              class="hover:text-green-600 cursor-pointer fa-solid fa-sliders"
+            ></i>
+            <i
+              class="hover:text-green-600 cursor-pointer fa-solid fa-heart"
+            ></i>
+            <i class="hover:text-green-600 cursor-pointer fa-solid fa-eye"></i>
+          </div>
+          <div class="pt-[12px]">
+            <div class="text-center hover:text-green-600 cursor-pointer">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <p class="text-center text-[14px] my-[10px]">Porro Cook</p>
+            <div class="text-center">
+              <span
+                class="product-price text-[15px] font-semibold text-green-600"
+                >$<span>62.00</span></span
+              >
+              <span class="line-through text-[12px] ml-[8px]"
+                >$<span>68.00</span></span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="relative product-item cursor-pointer duration-300">
+          <img src="./assets/img/products/product7.webp" alt="Product 1" />
+          <span
+            class="bg-red-600 text-white px-4 py-1 absolute top-[10px] left-[10px] text-[13px]"
+            >-4%</span
+          >
+          <div
+            class="product-feature bg-white w-[74%] h-[40px] absolute flex justify-around items-center hidden duration-300"
+          >
+            <i
+              class="btn-addToCart hover:text-green-600 cursor-pointer fa-solid fa-cart-shopping"
+            ></i>
+            <i
+              class="hover:text-green-600 cursor-pointer fa-solid fa-sliders"
+            ></i>
+            <i
+              class="hover:text-green-600 cursor-pointer fa-solid fa-heart"
+            ></i>
+            <i class="hover:text-green-600 cursor-pointer fa-solid fa-eye"></i>
+          </div>
+          <div class="pt-[12px]">
+            <div class="text-center hover:text-green-600 cursor-pointer">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <p class="text-center text-[14px] my-[10px]">Sapien Libero</p>
+            <div class="text-center">
+              <span
+                class="product-price text-[15px] font-semibold text-green-600"
+                >$<span>69.00</span></span
+              >
+              <span class="line-through text-[12px] ml-[8px]"
+                >$<span>74.00</span></span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="relative product-item cursor-pointer duration-300">
+          <img src="./assets/img/products/product8.webp" alt="Product 1" />
+          <span
+            class="bg-red-600 text-white px-4 py-1 absolute top-[10px] left-[10px] text-[13px]"
+            >-7%</span
+          >
+          <div
+            class="product-feature bg-white w-[74%] h-[40px] absolute flex justify-around items-center hidden duration-300"
+          >
+            <i
+              class="btn-addToCart hover:text-green-600 cursor-pointer fa-solid fa-cart-shopping"
+            ></i>
+            <i
+              class="hover:text-green-600 cursor-pointer fa-solid fa-sliders"
+            ></i>
+            <i
+              class="hover:text-green-600 cursor-pointer fa-solid fa-heart"
+            ></i>
+            <i class="hover:text-green-600 cursor-pointer fa-solid fa-eye"></i>
+          </div>
+          <div class="pt-[12px]">
+            <div class="text-center hover:text-green-600 cursor-pointer">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <p class="text-center text-[14px] my-[10px]">Vulputate Rutrum</p>
+            <div class="text-center">
+              <span
+                class="product-price text-[15px] font-semibold text-green-600"
+                >$<span>64.00</span></span
+              >
+              <span class="line-through text-[12px] ml-[8px]"
+                >$<span>72.00</span></span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="relative product-item cursor-pointer duration-300">
+          <img src="./assets/img/products/product8.webp" alt="Product 1" />
+          <span
+            class="bg-red-600 text-white px-4 py-1 absolute top-[10px] left-[10px] text-[13px]"
+            >-8%</span
+          >
+          <div
+            class="product-feature bg-white w-[74%] h-[40px] absolute flex justify-around items-center hidden duration-300"
+          >
+            <i
+              class="btn-addToCart hover:text-green-600 cursor-pointer fa-solid fa-cart-shopping"
+            ></i>
+            <i
+              class="hover:text-green-600 cursor-pointer fa-solid fa-sliders"
+            ></i>
+            <i
+              class="hover:text-green-600 cursor-pointer fa-solid fa-heart"
+            ></i>
+            <i class="hover:text-green-600 cursor-pointer fa-solid fa-eye"></i>
+          </div>
+          <div class="pt-[12px]">
+            <div class="text-center hover:text-green-600 cursor-pointer">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <p class="text-center text-[14px] my-[10px]">Donec Eu Cook</p>
+            <div class="text-center">
+              <span
+                class="product-price text-[15px] font-semibold text-green-600"
+                >$<span>67.00</span></span
+              >
+              <span class="line-through text-[12px] ml-[8px]"
+                >$<span>77.00</span></span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="relative product-item cursor-pointer duration-300">
+          <img src="./assets/img/products/product1.webp" alt="Product 1" />
+          <span
+            class="bg-red-600 text-white px-4 py-1 absolute top-[10px] left-[10px] text-[13px]"
+            >-7%</span
+          >
+          <div
+            class="product-feature bg-white w-[74%] h-[40px] absolute flex justify-around items-center hidden duration-300"
+          >
+            <i
+              class="btn-addToCart hover:text-green-600 cursor-pointer fa-solid fa-cart-shopping"
+            ></i>
+            <i
+              class="hover:text-green-600 cursor-pointer fa-solid fa-sliders"
+            ></i>
+            <i
+              class="hover:text-green-600 cursor-pointer fa-solid fa-heart"
+            ></i>
+            <i class="hover:text-green-600 cursor-pointer fa-solid fa-eye"></i>
+          </div>
+          <div class="pt-[12px]">
+            <div class="text-center hover:text-green-600 cursor-pointer">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <p class="text-center text-[14px] my-[10px]">Commodo Augue Nisi</p>
+            <div class="text-center">
+              <span
+                class="product-price text-[15px] font-semibold text-green-600"
+                >$<span>69.00</span></span
+              >
+              <span class="line-through text-[12px] ml-[8px]"
+                >$<span>74.00</span></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Review -->
+    <section class="review mt-[95px]">
+      <h2 class="product-title text-[40px] font-semibold text-center relative">
+        What Our Customers Says ?
+      </h2>
+      <div class="flex items-center justify-center mx-[240px]">
+        <div class="review-arrow">
+          <i
+            class="text-[35px] cursor-pointer hover:text-green-600 fa-solid fa-chevron-left"
+          ></i>
+        </div>
+
+        <div class="mt-[66px] w-[679px] flex flex-col items-center mx-[120px]">
+          <img
+            src="./assets/img/background/testimonials-icon.jpg"
+            alt="Review"
+          />
+          <p
+            class="review-content italic mt-[40px] mb-[20px] text-center text-[16px] leading-8"
+          >
+            When a beautiful design is combined with powerful technology, it
+            truly is an artwork. I love how my website operates and look with
+            this theme. Thank you for the awesome product.
+          </p>
+          <img src="./assets/img/Logo/testimonial1.jpg" alt="" />
+          <p
+            class="text-[14px] font-semibold my-[14px] cursor-pointer hover:text-green-600"
+          >
+            REBECKA FILSON / CEO OF CSC
+          </p>
+        </div>
+        <div class="review-arrow">
+          <i
+            class="text-[35px] cursor-pointer hover:text-green-600 fa-solid fa-chevron-right"
+          ></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand -->
+    <section class="brand mt-[65px] mx-[125px]">
+      <div class="flex items-center justify-around">
+        <div>
+          <i class="fa-solid fa-chevron-left duration-300"></i>
+        </div>
+        <div class="brand-logo flex">
+          <img src="./assets/img/Medallist/brand1.webp" alt="Brand" />
+          <img src="./assets/img/Medallist/brand2.webp" alt="Brand" />
+          <img src="./assets/img/Medallist/brand3.webp" alt="Brand" />
+          <img src="./assets/img/Medallist/brand4.webp" alt="Brand" />
+          <img src="./assets/img/Medallist/brand5.webp" alt="Brand" />
+        </div>
+        <div>
+          <i class="fa-solid fa-chevron-right duration-300"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Offer -->
+    <section class="offer mt-[95px]">
+      <h2
+        class="product-title text-center text-[40px] font-semibold relative tracking-wide"
+      >
+        Get <span class="text-green-600">20% Off</span> Your Next Order
+      </h2>
+      <div
+        class="newletters mt-[65px] text-center flex justify-center items-center relative"
+      >
+        <i class="text-[20px] fa-solid fa-envelope"></i>
+        <input
+          class="outline-none border-none ml-[20px] w-[500px]"
+          type="text"
+          placeholder="Enter your email"
+        />
+        <button class="hover:text-green-600 duration-300 text-[16px] p-0">
+          SUBSCRIBE
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-[95px]">
+      <div class="container mx-auto grid grid-cols-6 gap-6">
+        <div>
+          <h3 class="footer-header text-[14px] font-medium mb-[30px]">
+            OPENING TIME
+          </h3>
+          <div>
+            <div class="text-[15px] font-light">
+              <p class="my-2">Mon - Fri: 8AM - 10PM</p>
+              <p class="my-2">Sat: 9AM-8PM</p>
+              <p class="my-2">Suns: 14hPM-18hPM</p>
+            </div>
+            <div class="mt-8 text-[13px]">
+              <p class="text-green-600 font-semibold">
+                We work all the holidays
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-header text-[14px] font-medium mb-[30px]">
+            INFORMATION
+          </h3>
+          <div>
+            <a class="block my-2 hover:text-green-600 text-[14px]" href="#"
+              >About Us</a
+            >
+            <a class="block my-2 hover:text-green-600 text-[14px]" href="#"
+              >Checkout</a
+            >
+            <a class="block my-2 hover:text-green-600 text-[14px]" href="#"
+              >Contact</a
+            >
+            <a class="block my-2 hover:text-green-600 text-[14px]" href="#"
+              >Frequently Question</a
+            >
+            <a class="block my-2 hover:text-green-600 text-[14px]" href="#"
+              >Wishlist</a
+            >
+          </div>
+        </div>
+        <div class="col-span-2 text-center">
+          <img
+            class="w-[150px] mx-auto"
+            src="./assets/img/Logo/logo.jpg"
+            alt=""
+          />
+          <div class="my-6">
+            <a class="px-2 hover:text-green-600 duration-300" href="#"
+              >Payment</a
+            >
+            <a class="px-2 hover:text-green-600 duration-300" href="#"
+              >Affiliates</a
+            >
+            <a class="px-2 hover:text-green-600 duration-300" href="#"
+              >Contact</a
+            >
+            <a class="px-2 hover:text-green-600 duration-300" href="#"
+              >Internet</a
+            >
+          </div>
+          <div class="my-4">
+            <a
+              class="mx-4 inline-flex w-[42px] h-[42px] rounded-full bg-gray-200 items-center justify-center hover:bg-green-600 duration-300"
+              href="#"
+              ><i class="text-xl fa-brands fa-facebook-f"></i
+            ></a>
+            <a
+              class="mx-4 inline-flex w-[42px] h-[42px] rounded-full bg-gray-200 items-center justify-center hover:bg-green-600 duration-300"
+              href="#"
+              ><i class="text-xl fa-brands fa-twitter"></i
+            ></a>
+            <a
+              class="mx-4 inline-flex w-[42px] h-[42px] rounded-full bg-gray-200 items-center justify-center hover:bg-green-600 duration-300"
+              href="#"
+              ><i class="text-xl fa-brands fa-youtube"></i
+            ></a>
+            <a
+              class="mx-4 inline-flex w-[42px] h-[42px] rounded-full bg-gray-200 items-center justify-center hover:bg-green-600 duration-300"
+              href="#"
+              ><i class="text-xl fa-brands fa-google-plus-g"></i
+            ></a>
+          </div>
+          <div class="flex justify-around">
+            <img src="./assets/img/Apps/icon-app.webp" alt="Download" />
+            <img src="./assets/img/Apps/icon1-app.webp" alt="Download" />
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-header text-[14px] font-medium mb-[30px]">
+            MY ACCOUNT
+          </h3>
+          <div>
+            <a class="block my-2 hover:text-green-600 text-[14px]" href="#"
+              >My Accounts</a
+            >
+            <a class="block my-2 hover:text-green-600 text-[14px]" href="#"
+              >Shopping Cart</a
+            >
+            <a class="block my-2 hover:text-green-600 text-[14px]" href="#"
+              >Checkout</a
+            >
+            <a class="block my-2 hover:text-green-600 text-[14px]" href="#"
+              >Shop</a
+            >
+            <a class="block my-2 hover:text-green-600 text-[14px]" href="#"
+              >Order History</a
+            >
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-header text-[14px] font-medium mb-[30px]">
+            CUSTOMER SERVICE
+          </h3>
+          <div>
+            <a class="block my-2 hover:text-green-600 text-[14px]" href="#"
+              >Contact Us</a
+            >
+            <a class="block my-2 hover:text-green-600 text-[14px]" href="#"
+              >Temp of use</a
+            >
+            <a class="block my-2 hover:text-green-600 text-[14px]" href="#"
+              >Privacy policy</a
+            >
+            <a class="block my-2 hover:text-green-600 text-[14px]" href="#"
+              >Site Map</a
+            >
+            <a class="block my-2 hover:text-green-600 text-[14px]" href="#"
+              >Return</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <section class="copyright">
+      <div class="container mx-auto flex items-center justify-between py-4">
+        <div>
+          <p>
+            2021 <span class="text-green-600">Lukani</span>. Made with By
+            <span class="text-green-600">HasTheme</span>
+          </p>
+        </div>
+        <div class="card-credit">
+          <img src="./assets/img/Footer/payment.webp" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <div class="overlay">
+      <div class="cart">
+        <div class="flex items-center justify-between p-6">
+          <h2 class="text-xl font-semibold">Cart</h2>
+          <div class="btn-close-cart">
+            <i
+              class="text-xl hover:text-red-600 cursor-pointer duration-200 fa-regular fa-circle-xmark"
+            ></i>
+          </div>
+        </div>
+        <ul class="cart-list max-h-[400px] overflow-y-scroll"></ul>
+        <div class="cart-footer py-4">
+          <div class="flex items-center justify-between px-8">
+            <span class="font-light">Subtotal: </span>
+            <span>$ <span class="font-bold">0</span></span>
+          </div>
+          <div class="flex items-center justify-between px-8">
+            <span class="font-light">Total: </span>
+            <span>$ <span class="total-price font-bold">0</span></span>
+          </div>
+
+          <div class="text-center m-3 px-6">
+            <button class="py-2 w-full bg-gray-200 text-[12px] font-semibold">
+              <i class="mr-4 fa-solid fa-cart-shopping"></i> VIEW CART
+            </button>
+          </div>
+
+          <div class="text-center m-3 px-6">
+            <button
+              class="py-2 w-full bg-green-600 text-[12px] font-semibold text-white"
+            >
+              <i class="mr-4 fa-solid fa-right-to-bracket"></i> CHECKOUT
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+:root {
+  --black-color: #222;
+  --primary-color: #79a206;
+  --white-color: #fff;
+  --text-color: #232323;
+  --header-height: 676px;
+  --navbar-height: 38px;
+  --slider-height: calc(var(--header-height) - var(--navbar-height));
+  --size-image: 87px;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 100%;
+}
